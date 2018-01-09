@@ -1,0 +1,24 @@
+{
+  "name": "pocoyo_bot",
+  "version": "1.0.0",
+  "description": "A simple twitter bot",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "twitter": "^1.7.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sufiane/pocoyo_bot.git"
+  },
+  "author": "Sufiane Souissi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sufiane/pocoyo_bot/issues"
+  },
+  "homepage": "https://github.com/Sufiane/pocoyo_bot#readme"
+}
