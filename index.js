@@ -10,14 +10,12 @@ const twitterConf = {
     access_token_key: process.env.ACCESS_TOKEN_KEY,
     access_token_secret: process.env.ACCESS_TOKEN_SECRET,
 }
+const twitterApi = new twitter(twitterConf)
 
 // CONSTANTS
 const interval = 5*60*1000
 const usernameToSendTo = process.env.USERNAME_TO_SEND_TO
 const pathToPost = 'statuses/update'
-
-
-const twitterApi = new twitter(twitterConf)
 
 const messageList = [
     `pocoyo pocoyo ! @${usernameToSendTo}`,
@@ -46,7 +44,7 @@ const sendMessage = () => {
 
     twitterApi.post(pathToPost, tweetParams, (err) => {
         if (err) {
-            console.log('---- errooooooor', err)
+            console.log('Error: ', err.message)
         }
     })
 }
